@@ -13,6 +13,7 @@
 		C9BB45FD1AFCC049006E395F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9BB45FC1AFCC049006E395F /* Images.xcassets */; };
 		C9BB46001AFCC049006E395F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9BB45FE1AFCC049006E395F /* LaunchScreen.xib */; };
 		C9BB460C1AFCC049006E395F /* LimboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BB460B1AFCC049006E395F /* LimboTests.swift */; };
+		C9BB46161AFCE630006E395F /* LimbModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BB46151AFCE630006E395F /* LimbModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		C9BB46051AFCC049006E395F /* LimboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LimboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9BB460A1AFCC049006E395F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9BB460B1AFCC049006E395F /* LimboTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimboTests.swift; sourceTree = "<group>"; };
+		C9BB46151AFCE630006E395F /* LimbModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimbModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				C9BB45FC1AFCC049006E395F /* Images.xcassets */,
 				C9BB45FE1AFCC049006E395F /* LaunchScreen.xib */,
 				C9BB45F31AFCC049006E395F /* Supporting Files */,
+				C9BB46151AFCE630006E395F /* LimbModel.swift */,
 			);
 			path = Limbo;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9BB46161AFCE630006E395F /* LimbModel.swift in Sources */,
 				C9BB45F81AFCC049006E395F /* ViewController.swift in Sources */,
 				C9BB45F61AFCC049006E395F /* AppDelegate.swift in Sources */,
 			);
