@@ -12,6 +12,9 @@ class ViewController: UIViewController {
     @IBOutlet var limbLabel : UILabel!
     @IBOutlet var limbButton : UIButton!
     
+    @IBOutlet var limbPatternLengthLabel : UILabel!
+    @IBOutlet var limbPatternLengthStepper : UIStepper!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,6 +26,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func limbButtonTapped(sender : AnyObject) {
-        limbLabel.text = "\n".join(LimbModel().limbPattern())
+        let limbPattern = LimboModel(limbPatternLength: Int(limbPatternLengthStepper.value)).limbPattern()
+        
+        limbLabel.text = "\n".join(limbPattern)
+    }
+    
+    @IBAction func limbPatternLengthStepperValueChanged(sender : AnyObject) {
+        limbPatternLengthLabel.text = limbPatternLengthStepper.value.description
     }
 }

@@ -8,13 +8,22 @@
 
 import Foundation
 
-class LimbModel {
-    let limbs = ["Right Hand", "Left Hand", "Right Foot", "Left Foot"]
+class LimboModel {
+    let limbs : [String] = ["Right Hand", "Left Hand", "Right Foot", "Left Foot"]
+    var limbPatternLength : Int
+    
+    init(limbPatternLength: Int) {
+        self.limbPatternLength = limbPatternLength
+    }
     
     func limbPattern() -> [String] {
+        if (limbPatternLength == 0) {
+            return []
+        }
+        
         var pattern = [String]()
         
-        for index in 1...4 {
+        for index in 0...limbPatternLength - 1 {
             pattern.append(nextLimb())
         }
         
